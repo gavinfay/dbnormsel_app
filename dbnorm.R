@@ -1,4 +1,11 @@
-
+### 
+#' SS double normal selectivity function and plot. Code is ported from Tommy Garrison's 
+#' as in the r4ss function 'selfit'
+#'
+#' @author Gavin Fay
+#' 
+#' @param sp a vector of parameters for the double normal.
+#' 
 dbnorm_sel <- function(x=1:200,sp=rep(NA,6),...) {
 
       sel <- rep(NA, length(x))

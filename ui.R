@@ -1,23 +1,24 @@
+#' ui file for dbnormsel_app
+#' @author Gavin Fay
+
 library(shiny)
 
-# Define UI for application that draws a histogram
+# Define UI for application
 shinyUI(fluidPage(
   
   # Application title
   titlePanel("Double Normal Selectivity"),
   
-  # Sidebar with a slider input for the number of bins
+  # Sidebar with slider inputs for the parameter values
   sidebarLayout(
     sidebarPanel(
       
-#      # Copy the line below to make a file upload manager
 #      fileInput("outfile", label = h6("Output File")),
       
 #       textInput("text", label = h5("Output filename"), 
 #                 value = "Enter text..."),
 #       actionButton("action", label = "Write parameters"),
 #      hr(),
-#      fluidRow(column(4, verbatimTextOutput("value"))),
       
       sliderInput("p1",
                   "Start of Peak:",
@@ -53,7 +54,7 @@ shinyUI(fluidPage(
       
     ),
     
-    # Show a plot of the generated distribution
+    # Show a plot of the generated selectivity pattern
     mainPanel(
       plotOutput("distPlot")
     )
