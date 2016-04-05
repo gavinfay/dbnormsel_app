@@ -13,10 +13,10 @@ shinyUI(fluidPage(
 #      # Copy the line below to make a file upload manager
 #      fileInput("outfile", label = h6("Output File")),
       
-       textInput("text", label = h5("Output filename"), 
-                 value = "Enter text..."),
-       actionButton("action", label = "Write parameters"),
-      hr(),
+#       textInput("text", label = h5("Output filename"), 
+#                 value = "Enter text..."),
+#       actionButton("action", label = "Write parameters"),
+#      hr(),
 #      fluidRow(column(4, verbatimTextOutput("value"))),
       
       sliderInput("p1",
