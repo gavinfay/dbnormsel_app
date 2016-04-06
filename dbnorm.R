@@ -6,10 +6,13 @@
 #' 
 #' @param sp a vector of parameters for the double normal.
 #' 
-dbnorm_sel <- function(x=1:200,sp=rep(NA,6),...) {
+dbnorm_sel <- function(x=1:200,sp=rep(NA,6),p5off="No",p6off="No",...) {
 
       sel <- rep(NA, length(x))
       startbin <- 1
+      
+      if (p5off=="Yes") sp[5] <- -999
+      if (p6off=="Yes") sp[6] <- -999
       
       temp_frac <- sp[2]/(200-sp[1])
       sp[2] <- log(temp_frac/(1-temp_frac))

@@ -30,6 +30,8 @@ shinyServer(function(input, output) {
                     input$p4,
                     input$p5,
                     input$p6),
+               p5off=input$p5off,
+               p6off=input$p6off,
                col="darkgray")    
     
     })
